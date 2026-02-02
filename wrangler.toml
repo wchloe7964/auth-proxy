@@ -1,0 +1,6 @@
+name = "auth-proxy"
+main = "index.js" # This should match your worker filename
+compatibility_date = "2024-02-01"
+
+[vars]
+TARGET_HOST = "www.instagram.com"

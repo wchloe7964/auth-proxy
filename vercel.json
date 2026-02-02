@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/ms", "destination": "/api/index?target=ms&path=/" },
+    { "source": "/ms/:path*", "destination": "/api/index?target=ms&path=/:path*" },
+    { "source": "/ig", "destination": "/api/index?target=ig&path=/" },
+    { "source": "/ig/:path*", "destination": "/api/index?target=ig&path=/:path*" },
+    { "source": "/(.*)", "destination": "/api/index?target=ig&path=/$1" }
+  ]
+}
